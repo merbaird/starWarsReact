@@ -1,13 +1,17 @@
 <img src="http://montanacodeschool.com/wp-content/uploads/2016/08/MCS_LOGO_v1-1.png" width="200" align="right"/>
 
 ## Star Wars API
-
-## Purpose
+******
+### Purpose
 The purpose of this day project is to introduce students to performing API requests using React by creating a Star Wars informational application.
 
-## Directions
+### Directions
+ - Fork and clone this repository
+ - Create a project file tree
+   - index.html
+   - app.js
 
-### Setup
+#### Setup
 
 * Fork and clone this repository. Complete all of the following steps. When you have finished, push your code into GitHub.
 
@@ -48,7 +52,7 @@ ReactDOM.render(
 );
 ```
 
-### Get the Data
+#### Get the Data
 
 * Take a look at the Star Wars API docs [here](https://swapi.co) and look through all of the requirements and things you can do. I will only be going through what is necessary to display the people of Star Wars. When we are done, I would challenge you to set up some logic that runs through and allows you to display the rest of the information including the Planets, Starships, Vehicles, Films, and Species of Star Wars.
 
@@ -78,7 +82,7 @@ getInitialState: function() {
 
 * Now that we have a variable set, we can set the value equal to the response on a successful API request. Using the following syntax, set the state of the variable 'data' to be equal to the results key of the response object. ``this.setState({data: response.results});`` After this is set, log the value of this.state.data to verify that you are getting appropriate data. If you are, let's keep going. If you are not, make the adjustments necessary to get an appropriate value.
 
-### Display the Data
+#### Display the Data
 
 * Now that we have the data, let's display the data. In order to pass on the data into the list component, we will have to set it as a property variable. In the List tag in the render method, set the variable data equal to the state variable that we just set up. It should look like this. ``<List data={this.state.data}/>``
 
@@ -112,10 +116,10 @@ render: function() {
 
 * The last thing that needs to be completed is to set up the Person component. Create a new component named Person and render the JSX that you would like to display for each person. If you want to use any of the set variables, use the following syntax ``{this.props.varname}``. When you are done, run live-server to verify that everything is displaying accordingly.
 
-### Final Touches
+#### Final Touches
 
 * If you have done everything correctly, you should have a fairly crude rendering of each person. If this is the case, go ahead and add some styles. Try to get all of the other things in the Star Wars API like species, vehicles, starships, etc. May the force be with you.
 
-## Copyright
+### Copyright
 
 (c) Montana Code School, 2016.
